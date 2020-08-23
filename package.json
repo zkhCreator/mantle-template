@@ -8,12 +8,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/zkhCreator/mantle-template.git"
+    "url": "git+https://github.com/zkhCreator/{{projectName}}.git"
   },
   "author": "{{projectAuthor}}",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/zkhCreator/mantle-template/issues"
+    "url": "https://github.com/zkhCreator/{{projectName}}/issues"
   },
-  "homepage": "https://github.com/zkhCreator/mantle-template#readme"
+  "homepage": "https://github.com/zkhCreator/{{projectName}}#readme"
 }
