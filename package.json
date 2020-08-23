@@ -1,0 +1,19 @@
+{
+  "name": "{{projectName}}",
+  "version": "{{projectVersion}}",
+  "description": "{{projectDescription}}",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zkhCreator/mantle-template.git"
+  },
+  "author": "{{projectAuthor}}",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/zkhCreator/mantle-template/issues"
+  },
+  "homepage": "https://github.com/zkhCreator/mantle-template#readme"
+}
