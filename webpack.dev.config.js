@@ -3,7 +3,7 @@ const ExtractTextPlugin = require('extract-text-webpack-plugin');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
 
 module.exports = {
-  mode: "production", // "production" | "development" | "none"
+  mode: "development", // "production" | "development" | "none"
   // Chosen mode tells webpack to use its built-in optimizations accordingly.
   entry: "./src/index", // string | object | array
   // 默认为 ./src
@@ -16,11 +16,11 @@ module.exports = {
     // 必须是绝对路径（使用 Node.js 的 path 模块）
     filename: "main.js", // string
   },
-  devtool: "source-map",
   resolve: {
     // 如果同个文件夹中存在同名不同后缀的文件，按照顺序解析文件，如果前面已经解析，那么后面就不再解析。
     extensions: [".ts", ".tsx", ".js"]
   },
+  devtool: "eval-source-map",
   // 配置内部信息：https://webpack.docschina.org/configuration/
   module: {
     rules: [
