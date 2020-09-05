@@ -20,7 +20,16 @@ module.exports = {
     // 如果同个文件夹中存在同名不同后缀的文件，按照顺序解析文件，如果前面已经解析，那么后面就不再解析。
     extensions: [".ts", ".tsx", ".js"]
   },
-  devtool: "eval-source-map",
+  // devtool: "eval-source-map",
+  devServer: {
+    watchOptions: {
+      ignored: /node_modules/
+    },  
+    watchContentBase: true,
+    hot: true,
+    compress: true,
+    port: 9000
+  },
   // 配置内部信息：https://webpack.docschina.org/configuration/
   module: {
     rules: [
@@ -50,9 +59,9 @@ module.exports = {
   plugins: [
     // 将 css 拆分为多个文件，并行加载，增加网络请求，减少等待时间
     new ExtractTextPlugin('css/[name]-[contenthash].css'),
-    //// 复制 html 资源文件
-    //// new CopyWebpackPlugin([{
-    ////   from: '*.html',
-    //// }])
+    // 复制 html 资源文件
+    // new CopyWebpackPlugin([{
+    //   from: 'index.html',
+    // }])
   ]
 }
