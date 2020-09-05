@@ -15,5 +15,21 @@
   "bugs": {
     "url": "https://github.com/{{projectAuthor}}/{{projectName}}/issues"
   },
-  "homepage": "https://github.com/{{projectAuthor}}/{{projectName}}#readme"
+  "homepage": "https://github.com/{{projectAuthor}}/{{projectName}}#readme",
+  "devDependencies": {
+    "@babel/core": "^7.11.6",
+    "@babel/preset-env": "^7.11.5",
+    "@babel/preset-typescript": "^7.10.4",
+    "babel-loader": "^8.1.0",
+    "copy-webpack-plugin": "^6.1.0",
+    "css-loader": "^4.2.2",
+    "extract-text-webpack-plugin": "^4.0.0-beta.0",
+    "typescript": "^4.0.2",
+    "webpack": "^4.44.1",
+    "webpack-cli": "^3.3.12"
+  },
+  "dependencies": {
+    "@types/lodash": "^4.14.161",
+    "lodash": "^4.17.20"
+  }
 }
